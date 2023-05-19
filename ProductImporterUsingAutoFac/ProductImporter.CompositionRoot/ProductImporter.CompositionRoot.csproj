@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+
+	<ItemGroup>
+		<PackageReference Include="Autofac.Extensions.DependencyInjection" Version="8.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
+	</ItemGroup>
+
+
+	<ItemGroup>
+		<ProjectReference Include="..\ProductImporter.Logic.Transformations\ProductImporter.Logic.Transformations.csproj" />
+		<ProjectReference Include="..\ProductImporter.Logic\ProductImporter.Logic.csproj" />
+		<ProjectReference Include="..\ProductImporter.Model\ProductImporter.Model.csproj" />
+	</ItemGroup>
+</Project>
